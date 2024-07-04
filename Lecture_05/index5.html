@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h2 {
+      text-align: center;
+    }
+    #para1 {
+      background-color: aqua;
+      color: red;
+    }
+    #para2, #para3 {
+      color: blue;
+    }
+    div > p {
+      background-color: yellow;
+    }
+    div + p {  /* adjacent Sibling selector (only one) */
+      background-color: green;
+    }
+    h4 {
+      background-color: rgba(37, 74, 197, 0.498);
+    }
+    #hoverid:hover {
+      background-color: black;
+      color: white;
+    }
+    #hoverid::first-letter {
+      color: rgb(255, 0, 0);
+    }
+    a[target] {
+      color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <h2>Manideep</h2>
+  <p id="para1">My name is Manideep</p>
+  <p id="para2">My name is Manideep</p>
+  <p id="para3">My name is Manideep</p><br>
+  <div>
+    <p>this text is inside para tag and that is inside div</p>
+  </div><hr><br>
+
+  <div>
+    <p>this is para</p>
+    <section>
+      <p>this para inside section that is inside div</p>
+    </section>
+  </div><br>
+
+  <div>
+    <p>this is para</p>
+  </div>
+  <p>this is adjacent to div</p>
+  <p>this is adjacent to div</p><br>
+
+  <h3>this is h3</h3>
+  <h4>this is h4</h4><br>
+
+  <div>
+    <p id="hoverid">The 'hover' pseudo-class in CSS is used to apply styles to an element when the user hovers over it with their mouse. This can be used to create interactive and visually appealing effects on elements such as links, buttons, or any other HTML elements.</p>
+  </div>
+
+  <div>
+    <a href="https://google.com">Google</a><br>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+  </div>
+</body>
+</html>
