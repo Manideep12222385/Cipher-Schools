@@ -1,0 +1,1 @@
+In this Lecture we studied about installing react applications and how to use react applications.
